@@ -1,0 +1,10 @@
+<p>home입니다.</p>>
+<a href = "{% url 'create' %}">글쓰기</a>
+{% for x in posts.all %}
+    <p>제목:</p>
+    {{x.title}}<br>
+    <p>내용:</p>
+    {{x.body}}<br>
+    <p>쓴사람:</p>
+    {{x.author}}
+{% endfor %}
